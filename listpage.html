@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>File Upload and List</title>
+<style>
+    /* CSS styles are defined here */
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/logout">Logout</a>
+    <a href="/settings">Settings</a>
+</div>
+
+<div class="upload-area">
+    Drag files here or click to upload
+</div>
+
+<table class="file-list">
+    <tr>
+        <th>File Name</th>
+        <th>Upload Date</th>
+        <th>Status</th>
+        <th>Progress</th>
+        <th>Actions</th>
+    </tr>
+    <!-- Sample file row -->
+    <tr>
+        <td>example.mp3</td>
+        <td>2023-12-22</td>
+        <td>Processing</td>
+        <td><div class="progress-bar" style="width: 50%;">50%</div></td>
+        <td>
+            <button class="button">Transcribe</button>
+            <button class="button">Download</button>
+            <button class="button">Delete</button>
+        </td>
+    </tr>
+    <!-- Repeat for more files -->
+</table>
+
+</body>
+</html>
