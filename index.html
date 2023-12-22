@@ -5,24 +5,28 @@
 <style>
     body {
         font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
         background-color: #f0f0f0;
+    }
+    .left-section {
+        flex: 2;
+        background-image: url('login.webp');
+        background-size: cover;
+    }
+    .right-section {
+        flex: 1;
+        background-color: white;
+        padding: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin: 0;
     }
-    .container {
-        background-color: white;
-        width: 300px;
-        padding: 40px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-    .logo {
-        width: 250px;
-        margin-bottom: 20px;
+    .login-container {
+        max-width: 300px;
+        width: 100%;
     }
     input[type=text], input[type=password] {
         width: 100%;
@@ -48,6 +52,7 @@
     }
     .form-footer {
         font-size: 14px;
+        text-align: center;
     }
     .form-footer a {
         color: #007BFF;
@@ -60,18 +65,23 @@
 </head>
 <body>
 
-<div class="container">
-    <img src="logo.png" alt="Brand Logo" class="logo"/>
-    <h2>Login to Your Account</h2>
-    <form action="/submit-login" method="post">
-        <input type="text" placeholder="Enter Username" name="uname" required><br>
-        <input type="password" placeholder="Enter Password" name="psw" required><br>
-        <button type="submit" class="button">Login</button>
-        <div class="form-footer">
-            <a href="/register">Register New Account</a><br>
-            <a href="/forgot-password">Forgot Password?</a>
-        </div>
-    </form>
+<div class="left-section">
+    <!-- Background image will be displayed here -->
+</div>
+
+<div class="right-section">
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <form action="/submit-login" method="post">
+            <input type="text" placeholder="Enter Username" name="uname" required><br>
+            <input type="password" placeholder="Enter Password" name="psw" required><br>
+            <button type="submit" class="button">Login</button>
+            <div class="form-footer">
+                <a href="/register">Register New Account</a><br>
+                <a href="/forgot-password">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
 </div>
 
 </body>
