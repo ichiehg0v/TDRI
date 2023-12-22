@@ -17,6 +17,14 @@
         justify-content: space-between;
         align-items: center;
     }
+    .navbar-left {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-left img {
+        height: 30px; /* Adjust the size of your logo */
+        margin-right: 10px;
+    }
     .navbar a {
         color: white;
         text-decoration: none;
@@ -70,8 +78,11 @@
 <body>
 
 <div class="navbar">
+    <div class="navbar-left">
+        <img src="logo.png" alt="Brand Logo">
+        <a href="/settings">Settings</a>
+    </div>
     <a href="/logout">Logout</a>
-    <a href="/settings">Settings</a>
 </div>
 
 <div class="upload-area">
